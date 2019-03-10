@@ -1,0 +1,111 @@
+.header {
+  // ToDo: Change path
+  background-image: url('../../static/code.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+  display: flex;
+
+  &--margin-top {
+    margin-top: 5vh;
+  }
+
+  &__container {
+    background-image: url('../../static/grid.png');
+    height: 65vh;
+    flex: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__intro {
+    padding-top: 10px;
+    padding-bottom: 3px;
+    vertical-align: middle;
+    margin: auto auto;
+    width: 20%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  &__quotebox {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &__text {
+    color: white;
+    font-family: Hansief;
+    font-size: 22px;
+
+    &--big {
+      font-size: 52px;
+    }
+
+    &--green {
+      color: #33cc33;
+    }
+
+    &--shadow {
+      text-shadow: 0 0 1px, 0 0 1px;
+    }
+  }
+
+  &__quote {
+    font-family: Nikoleta;
+    color: white;
+    font-size: 32px;
+
+    &:before {
+      content: open-quote;
+    }
+
+    &:after {
+      content: close-quote;
+    }
+
+    &--author {
+      margin-top: 5px;
+      color: white;
+      text-align: center;
+      font-family: Nikoleta;
+      font-size: 20px;
+
+      &:before {
+        content: '- ';
+      }
+
+      &:after {
+        content: ' -';
+      }
+    }
+  }
+}
+
+.img-placeholder {
+  background-color: white;
+  width: 70%;
+  padding-top: 70%;
+  margin: auto auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-image: url('../../static/pasfoto.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.vue-typer .custom.char.typed {
+  color: #8bc34a;
+}
+
+@media only screen and(max-width: 800px) {
+  .header {
+    margin-top: 5vh;
+  }
+}

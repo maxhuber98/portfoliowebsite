@@ -1,0 +1,62 @@
+.skills {
+  background-color: white;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    font-family: Hansief;
+    text-align: center;
+    color: #33cc33;
+    font-size: 52px;
+  }
+
+  &__bar-placeholder {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #9e9e9e;
+  }
+
+  &__bar-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #01579b;
+    height: 28px;
+    width: 0;
+
+    &--visible {
+      width: 100%;
+      animation: slideInRight 1s;
+    }
+  }
+
+  &__container {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-of-type {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
