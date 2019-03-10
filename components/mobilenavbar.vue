@@ -11,13 +11,13 @@
         <a href="#" @click="toggleHamburger">Home</a>
       </li>
       <li class="mobilenavbar__item">
-        <a href="#">Over mij</a>
+        <a href="#about" @click="toggleHamburger">Over mij</a>
       </li>
       <li class="mobilenavbar__item">
-        <a href="#">Skills</a>
+        <a href="#skills" @click="toggleHamburger">Skills</a>
       </li>
       <li class="mobilenavbar__item">
-        <a href="#">Contact</a>
+        <a href="#contact" @click="toggleHamburger">Contact</a>
       </li>
     </ul>
   </section>

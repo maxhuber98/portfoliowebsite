@@ -1,9 +1,16 @@
 .skills {
   background-color: white;
   min-height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   &__title {
     font-family: Hansief;
@@ -19,35 +26,66 @@
   }
 
   &__bar-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #01579b;
     height: 28px;
     width: 0;
 
     &--visible {
       width: 100%;
-      animation: slideInRight 1s;
+      -webkit-animation: slideInRight 1s;
+              animation: slideInRight 1s;
     }
   }
 
   &__container {
     width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   &__row {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     &:last-of-type {
       padding-bottom: 10px;
     }
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
   }
 }
 
@@ -58,5 +96,21 @@
 
   100% {
     width: 100%;
+  }
+}
+
+@media only screen and(max-width: 800px) {
+  .skills {
+    &__container {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and(max-width: 300px) {
+  .skills {
+    &__container {
+      width: 90%;
+    }
   }
 }
