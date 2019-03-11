@@ -37,9 +37,11 @@
   &__intro {
     padding-top: 10px;
     padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
     vertical-align: middle;
     margin: auto auto;
-    width: 20%;
+    width: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -56,6 +58,7 @@
     color: white;
     font-family: Hansief;
     font-size: 22px;
+    text-align: center;
 
     &--big {
       font-size: 52px;
@@ -121,5 +124,21 @@
 @media only screen and(max-width: 800px) {
   .header {
     margin-top: 5vh;
+  
+    &__quotebox {
+      display: none;
+    }
+
+    &__text {
+    
+    }
+  }
+}
+
+@media only screen and(min-width: 1400px) {
+  .header {
+    &__intro {
+      width: 20%;
+    }
   }
 }
