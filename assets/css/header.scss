@@ -45,6 +45,7 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    overflow: auto;
   }
 
   &__quotebox {
@@ -106,8 +107,8 @@
 
 .img-placeholder {
   background-color: white;
-  width: 70%;
-  padding-top: 70%;
+  width: 60%;
+  padding-top: 60%;
   margin: auto auto;
   border-radius: 50%;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);

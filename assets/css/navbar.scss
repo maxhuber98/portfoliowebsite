@@ -436,6 +436,44 @@ $translateX: 0;
   }
 }
 
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .navbar {
+    &__container {
+      display: none;
+    }
+  }
+
+  .stickynavbar {
+    &__container {
+      display: none;
+    }
+  }
+
+  .mobilenavbar {
+    &__container {
+      display: unset!important;
+    }
+  }
+
+  .header {
+    margin-top: 50px;
+
+    &__quotebox {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .header {
+    height: 80vh!important;
+
+    &__container {
+      height: 80vh!important;
+    }
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .mobilenavbar {
     &__container {
