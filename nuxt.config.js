@@ -19,12 +19,16 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: pkg.description
+      },
+      {
+        name: 'theme-color',
+        content: '#01579b'
       }
     ],
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/favicon.ico'
+      href: 'mh2.ico'
     }]
   },
 
@@ -66,5 +70,8 @@ module.exports = {
     extend(config, ctx) {
 
     }
+  },
+  router: {
+    base: '/'
   }
 }

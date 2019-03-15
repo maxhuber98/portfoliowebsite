@@ -63,6 +63,17 @@ export default {
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.checkOffset)
+  },
+  head() {
+    return {
+      title: "Max Huber",
+      meta: [
+        {
+          hid: 'description', name: 'description', content: 'Portfolio website by Max Huber',
+
+        }
+      ]
+    }
   }
 }
 </script>
